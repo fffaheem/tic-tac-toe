@@ -4,12 +4,10 @@ let hva = document.getElementById("hva");
 
 play.addEventListener("click",(e)=>{
   if(hvh.checked){
-    mode="human";
+    window.location = "./human.html"
   }else{
-    mode = "ai";
+    window.location = "./ai.html"
   }
-
-  window.location = `./main.html?mode=${mode}`;
   
 })
 
